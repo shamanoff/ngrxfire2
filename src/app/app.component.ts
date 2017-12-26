@@ -18,6 +18,7 @@ export class AppComponent {
   post$: Observable<Post>;
 
   constructor(private store: Store<AppState>) {
+    this.post$ = this.store.select('post');
   }
 
 
