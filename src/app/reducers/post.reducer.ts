@@ -12,7 +12,7 @@ export function postReducer(state: Post, action: Action) {
     case PostAction.GET_POST_SUCCESS:
       return {...state, ...action.payload, loading: false};
 
-    case PostAction.VOTE_UDATE:
+    case PostAction.VOTE_UPDATE:
       return {...state, ...action.payload, loading: true};
 
     case PostAction.VOTE_SUCCESS:
